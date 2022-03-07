@@ -9,12 +9,18 @@
 
     <link rel="stylesheet" type="text/css" href="../../static/Books/styles.css">
 
-    <title>ebookstore</title>
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: white">
       <div class="container-fluid panel">
-        <a class="navbar-brand"><img src="../../static/images/logo.jpg" alt="logopic"></a>
+        <!-- <a class="navbar-brand"><img src="../../static/images/logo.jpg" alt="logopic"></a> -->
+        <i class="fas fa-book-reader" style="font-size:60px; color: gray; margin: 3px 25px 0px 0px;"></i><br>
+        <h3 style="font-family: cursive; font-weight: bold; margin-top: 8px; font-size: 20px; margin-left: -10px; margin-right: 15px;" > Digital Library</h3>
         <button class="navbar-toggler" type="button" data-togglr="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
@@ -47,12 +53,12 @@
               <a class="nav-link hover" href="{% url 'favourites' %}" hovertext="My Favorites"><font color="white">Ai</font>
                 <img src="../../static/images/fav.png"></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
 
               <div id="hoverdiv"></div>
               <a class="nav-link hover" href="#popup1" hovertext="Upload a Book"><font color="white">Ai</font><img src="../../static/images/upload.png">
 </a>
-            </li>
+            </li> -->
             <li class="nav-item">
 
               <div id="hoverdiv"></div>
@@ -205,22 +211,22 @@
 </div>
 {#    {% endfor %}#}
 
-<div style="background-color: #333">
+<!-- <div style="background-color: #333">
   <font class="hover" hovertext=" – Mortimer J. Adler" color=#66696A ><i class="text-center">
 &nbsp&nbsp&nbsp&nbsp“&nbsp&nbsp&nbsp&nbspIn the case of good books, the point is not to see how many of them you can get through, but rather how many can get through to you.&nbsp&nbspThink before you speak. Read before you think.&nbsp&nbsp&nbsp&nbsp”</i></font>
-</div>
+</div> -->
 
 
 
 
 <footer class="foot">
-  <a name="footer"><font color="black">
-    <p class="text-right">&copy Copyright. All rights reserved.&nbsp&nbsp&nbsp</p></font>
+  <a name="footer" ><font color="black">
+    <p class="text-right" style="background-color: gray; padding:15px 440px;">&copy Copyright. All rights reserved.&nbsp&nbsp&nbsp</p></font>
   </a>
 </footer>
 
 
-<div id="popup1" class="overlay">
+<!-- <div id="popup1" class="overlay">
     <div class="popup">
         <h5>  Share your content with us.</h5>
 
@@ -263,7 +269,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
