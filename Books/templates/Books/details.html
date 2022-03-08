@@ -20,16 +20,24 @@
     {% else %}
         <link rel="stylesheet" type="text/css" href="../static/Books/styleee.css">
     {% endif %}
-    <title>ebookstore</title>
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: white">
     <div class="container-fluid panel">
         {% if isLiked %}
-            <a class="navbar-brand"><img src="../../../static/images/logo.jpg" alt="logopic"></a>
+            <!-- <a class="navbar-brand"><img src="../../../static/images/logo.jpg" alt="logopic"></a> -->
+            <i class="fas fa-book-reader" style="font-size:60px; color: gray; margin: 3px 25px 0px 0px;"></i><br>
+        <h3 style="font-family: cursive; font-weight: bold; margin-top: 8px; font-size: 20px; margin-left: -10px; margin-right: 15px;" > Digital Library</h3>
         {% else %}
-            <a class="navbar-brand"><img src="../static/images/logo.jpg" alt="logopic"></a>
+            <!-- <a class="navbar-brand"><img src="../static/images/logo.jpg" alt="logopic"></a> -->
+            <i class="fas fa-book-reader" style="font-size:60px; color: gray; margin: 3px 25px 0px 0px;"></i><br>
+        <h3 style="font-family: cursive; font-weight: bold; margin-top: 8px; font-size: 20px; margin-left: -10px; margin-right: 15px;" > Digital Library</h3>
         {% endif %}
 
 
@@ -83,7 +91,7 @@
                         {% endif %}
 
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
 
                 <div id="hoverdiv"></div>
                 {% if isLiked %}
@@ -92,7 +100,7 @@
                     <a class="nav-link hover" href="#popup1" hovertext="Upload a Book"><font color="white">Ai</font><img src="../static/images/upload.png">
                 {% endif %}
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item">
 
                 <div id="hoverdiv"></div>
@@ -247,11 +255,17 @@
 
 
 <div>
-    <footer class="foot">
+    <!-- <footer class="foot">
         <a name="footer"><font color="black">
             <p class="text-right">&copy Copyright. All rights reserved.&nbsp&nbsp&nbsp</p></font>
         </a>
-    </footer>
+    </footer> -->
+
+    <footer class="foot">
+  <a name="footer" ><font color="black">
+    <p class="text-right" style="background-color: gray; padding:15px 440px;">&copy Copyright. All rights reserved.&nbsp&nbsp&nbsp</p></font>
+  </a>
+</footer>
 </div>
 <input type="hidden" id="myVar" name="variable" value="{{ ratings }}">
 
